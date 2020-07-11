@@ -1,26 +1,58 @@
 <template>
   <section class="services-section" id="services">
     <div class="services-container">
-      <div class="services-img">
-        <img class="service-img-one" src="../assets/service-img.svg" />
-      </div>
       <div class="services-info">
         <h3 class="services-title">Services</h3>
-        <p
-          class="services-description"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel accumsan sem. Ut sed nibh nec nulla finibus feugiat. Aliquam interdum rhoncus velit sit amet consectetur.</p>
-        <p
-          class="services-description"
-        >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel accumsan sem. Ut sed nibh nec nulla finibus feugiat. Aliquam interdum rhoncus velit sit amet consectetur.</p>
 
-        <ul class="services-list">
-          <li>Web Development</li>
-          <li>Design Services</li>
-          <li>Software Development</li>
-          <li>Mobile Apps</li>
-        </ul>
-
-        <button class="btn-buy-services">Contract Services</button>
+        <div class="service-signin">
+          <div class="service-card service-one">
+            <h1>Websites</h1>
+            <ul class="services-list">
+              <li>Landing Page</li>
+              <li>Websites responsivos</li>
+              <li>Aluguel de Domínio</li>
+              <li>Manutenção do Site</li>
+            </ul>
+            <p class="price">
+              <sup>R$</sup>99/mês
+            </p>
+            <div class="button-section">
+              <button class="btn-buy-service">Buy service</button>
+            </div>
+          </div>
+          <div class="service-card service-two">
+            <h1>Software</h1>
+            <ul class="services-list">
+              <li>Software Personalizado</li>
+              <li>Softwares para empresas</li>
+              <li>Manutenção</li>
+            </ul>
+            <p class="price">
+              <sup>R$</sup>300/mês
+            </p>
+            <div class="button-section">
+              <button class="btn-buy-service">Buy service</button>
+            </div>
+          </div>
+          <div class="service-card service-three">
+            <h1>Design</h1>
+            <ul class="services-list">
+              <li>Logo e Identidade Visual</li>
+              <li>Cartões de Visita</li>
+              <li>Marketing Digital</li>
+              <li>Banners e Flyers</li>
+            </ul>
+            <p class="price">
+              <sup>R$</sup>45/mês
+            </p>
+            <div class="button-section">
+              <button class="btn-buy-service">Buy service</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-img">
+        <img class="service-img-one" src="../assets/service-img.svg" />
       </div>
     </div>
   </section>
@@ -31,6 +63,10 @@ export default {};
 </script>
 
 <style>
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 .services-section {
   padding: 100px;
 }
@@ -43,14 +79,10 @@ export default {};
 
 .services-img {
   display: flex;
-  transition: ease-out 0.2s;
 }
 
 .service-img-one {
-  width: 100%;
-  margin-top: 0px;
-  margin-right: 50px;
-  transition: ease-out 0.4s;
+  max-width: 600px;
 }
 
 .services-title {
@@ -62,7 +94,8 @@ export default {};
 }
 
 .services-info {
-  padding: 50px;
+  width: 100%;
+  padding: 20px;
 }
 
 .services-description {
@@ -81,26 +114,101 @@ export default {};
   transition: ease-out 0.4s;
 }
 
+.service-signin {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-card {
+  max-width: 600px;
+  height: 400px;
+  margin-right: 20px;
+  outline: 2px solid #ddd;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  transition: ease-out 0.2s;
+  cursor: default;
+}
+
+.service-card:hover {
+  transition-timing-function: ease-out;
+  outline: 2px solid rgb(52, 196, 140);
+  margin-top: -5px;
+}
+
+.service-card:hover h1 {
+  color: rgb(52, 196, 140);
+}
+
+.service-card:hover li {
+  color: rgb(61, 61, 61);
+}
+
+.service-card:hover .btn-buy-service {
+  background: rgb(52, 196, 140);
+  color: white;
+}
+
+.service-card:hover .price {
+  color: black;
+}
+
+.service-card h1 {
+  width: 100%;
+  height: 60px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 24pt;
+  color: rgb(151, 151, 151);
+  transition: ease-out 0.2s;
+}
+
 .services-list {
-  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  padding: 30px;
   list-style: none;
 }
 
 .services-list li {
-  margin-bottom: 15px;
-  font-weight: bold;
-  color: rgb(168, 168, 168);
-  display: flex;
-  align-items: center;
+  padding: 10px;
+  font-size: 12pt;
+  color: rgb(151, 151, 151);
+  transition: ease-out 0.2s;
 }
 
-.services-list li::before {
-  content: "";
-  width: 5px;
-  height: 5px;
-  background: rgb(52, 196, 140);
-  border-radius: 50%;
-  margin-right: 20px;
+.price {
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  font-size: 2rem;
+  margin-top: -20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: rgb(124, 124, 124);
+  transition: ease-out 0.2s;
+}
+
+.button-section {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+
+.btn-buy-service {
+  width: 100%;
+  margin: 0;
+  border: none;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-weight: bold;
+  color: rgb(151, 151, 151);
+  transition: ease-out 0.2s;
+  cursor: pointer;
 }
 
 .btn-buy-services {
