@@ -7,7 +7,7 @@
       <div class="card-content">
         <div class="card-img card-one"></div>
         <div class="card-info">
-          <h3 class="card-title">Web Design</h3>
+          <h3 class="card-title">Lovely Pet</h3>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button class="btn-details">See more</button>
         </div>
@@ -16,7 +16,7 @@
       <div class="card-content card-two">
         <div class="card-img card-two"></div>
         <div class="card-info">
-          <h3 class="card-title">Mobile</h3>
+          <h3 class="card-title">Lovely Pet App</h3>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button class="btn-details">See more</button>
         </div>
@@ -25,7 +25,7 @@
       <div class="card-content">
         <div class="card-img card-three"></div>
         <div class="card-info">
-          <h3 class="card-title">Software</h3>
+          <h3 class="card-title">E.nygma</h3>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button class="btn-details">See more</button>
         </div>
@@ -34,7 +34,7 @@
       <div class="card-content">
         <div class="card-img card-four"></div>
         <div class="card-info">
-          <h3 class="card-title">UX/UI Design</h3>
+          <h3 class="card-title">DesignIt</h3>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           <button class="btn-details">See more</button>
         </div>
@@ -45,7 +45,7 @@
 
 <script>
 export default {
-  name: "ProductsCards"
+  name: "ProductsSection"
 };
 </script>
 

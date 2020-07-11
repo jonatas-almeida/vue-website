@@ -5,6 +5,7 @@
       <WelcomeCover />
       <ProductSection />
       <ServicesSection />
+      <ContactSection />
     </div>
   </div>
 </template>
